@@ -1,0 +1,8 @@
+#include <tunables/global>
+profile no_raw flags=(attach_disconnected,mediate_deleted) {
+	network,
+	file,
+	mount,
+	deny network raw,
+	deny network packet,
+}
